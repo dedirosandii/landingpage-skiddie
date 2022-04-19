@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  height: auto;
+  background: #fdfdfd;
+}
+
+// navbar
+.navbar-skiddie {
+  padding: 15px 0;
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .navbar-nav {
+    .nav-item {
+      margin-right: 25px;
+      .active {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+header {
+  margin-top: 100px;
+  .image-header {
+    position: relative;
+    margin-top: 20px;
+    img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      // object-fit: cover;
+    }
+  }
+  .text-header {
+    position: relative;
+    h3 {
+      margin-top: 30px;
+      line-height: 1;
+      font-size: 40px;
+      font-weight: bold;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #a09a9a;
+    }
+    .btn-header {
+      color: #fff;
+      margin-top: 15px;
+      background-color: #458ff6;
+      border-radius: 30px;
+      padding: 10px 25px;
+      transition: 0.8s;
+      &:hover {
+        background-color: #154b96;
+        color: #fff;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 250px;
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .border-custom {
+    border: 2px solid #ffe815;
+    width: 80px;
+  }
+  .section-what-we-do {
+    .card-we-do {
+      border: none;
+      margin: 0 20px;
+      margin-top: 45px;
+      background-color: #fdfdfd;
+      .image-card {
+        margin-top: 30px;
+        padding: 20px 0;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      h5 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .section-about-us {
+    margin-top: 215px;
+    .about-us-row {
+      margin-top: 40px;
+      .image-about {
+        img {
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+          background-repeat: no-repeat;
+          width: 550px;
+          height: 456px;
+        }
+      }
+      .text-about {
+        margin-top: 20px;
+        color: #78909c;
+      }
+      .btn-about {
+        background-color: #458ff6;
+        border-radius: 27px;
+        color: #fff;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  .section-projects {
+    margin-top: 215px;
+    .project-container {
+      margin-top: 70px;
+      padding: 30px 0;
+      border-radius: 77px;
+      background: transparent;
+      color: rgb(0, 0, 0);
+      .card-projects {
+        // width: 300px;
+        margin-bottom: 10px;
+        .title-project {
+          h5 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #004058;
+          }
+          span {
+            font-size: 16px;
+            color: #2f2e41;
+            font-weight: normal;
+          }
+        }
+        .description-project {
+          p {
+            font-size: 16px;
+            margin-top: 5px;
+            font-weight: normal;
+            color: #78909c;
+          }
+        }
+        .btn-project-section {
+          background-color: #1f95c8;
+          padding: 5px 30px;
+          color: #ffffff;
+          transition: 0.8s;
+          &:hover {
+            background-color: #1878a1;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 350px;
+  background-color: #e2f3ff;
+  padding: 30px 0;
+  .icon-social {
+    display: inline-block;
+    img {
+      height: 28px;
+      width: 28px;
+    }
+  }
+  .icon-social-linked {
+    display: inline-block;
+    img {
+      height: 78px;
+      width: 78px;
+    }
+  }
+  .icon-social-instagram {
+    display: inline-block;
+    img {
+      height: 18px;
+      width: 18px;
+    }
+  }
+  .icon-social-gmail {
+    display: inline-block;
+    img {
+      height: 18px;
+      width: 18px;
+    }
+  }
+  .border-footer {
+    border: 1px solid #000000;
+    width: 20%;
+    margin: -20px auto 10px auto;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .section-thanks {
+    margin-top: 250px;
+    img {
+      height: 650px;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h2 {
+      font-weight: 600;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    margin-top: 200px;
+    .decoration-one {
+      background-image: url("../assets/images/dot.svg");
+      position: absolute;
+      z-index: 0;
+      bottom: auto;
+      top: 85px;
+      left: 0;
+      img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.3;
+      }
+    }
+  }
+  main {
+    margin-top: 250px;
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .border-custom {
+      border: 2px solid #ffe815;
+      width: 80px;
+    }
+    .section-what-we-do {
+      .decoration-two {
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        img {
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.8;
+        }
+      }
+      .card-we-do {
+        border: none;
+        margin: 0 20px;
+        margin-top: 45px;
+        background-color: #fdfdfd;
+        .image-card {
+          margin-top: 30px;
+          padding: 20px 0;
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+        h5 {
+          margin-top: 50px;
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .section-about-us {
+      margin-top: 215px;
+      .about-us-row {
+        margin-top: 40px;
+        .image-about {
+          img {
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            width: 550px;
+            height: 456px;
+          }
+        }
+        .text-about {
+          margin-top: 120px;
+          color: #78909c;
+        }
+        .btn-about {
+          background-color: #458ff6;
+          border-radius: 27px;
+          color: #fff;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
